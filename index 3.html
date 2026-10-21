@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dentista Pilar Godoy | Clínica dental en Almería, Av. Cabo de Gata</title>
+<meta name="description" content="Clínica dental de Pilar Godoy en Almería. Av. de Cabo de Gata 122, 1ºC. Trato directo, diagnóstico claro y presupuesto antes de empezar. Tel. 950 24 21 36.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dentist","name":"Dentista Pilar Godoy","telephone":"+34950242136",
+"address":{"@type":"PostalAddress","streetAddress":"Av. de Cabo de Gata, 122, 1ºC","postalCode":"04007","addressLocality":"Almería","addressCountry":"ES"},
+"geo":{"@type":"GeoCoordinates","latitude":36.829239,"longitude":-2.451938},
+"openingHoursSpecification":[
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Wednesday","Friday"],"opens":"08:00","closes":"15:00"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Thursday"],"opens":"08:00","closes":"20:00"}]}
+</script>
+<style>
+:root{
+  --perla:#EEF1EF; --superficie:#FFFFFF; --tinta:#0F2A36; --tinta-2:#46606A;
+  --mar:#123542; --mar-2:#1B4555; --agave:#8FA89B; --oro:#B98A48; --oro-claro:#E3C08A;
+  --linea:rgba(15,42,54,.14); --sobre-mar:#EAF0EE; --sobre-mar-2:#A9BDB8;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --perla:#0B1A21; --superficie:#112630; --tinta:#E6EDEA; --tinta-2:#9DB2AE;
+    --mar:#0E2630; --mar-2:#173A47; --linea:rgba(230,237,234,.14); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --perla:#0B1A21; --superficie:#112630; --tinta:#E6EDEA; --tinta-2:#9DB2AE;
+  --mar:#0E2630; --mar-2:#173A47; --linea:rgba(230,237,234,.14); color-scheme:dark;
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--perla);color:var(--tinta);font:400 17px/1.6 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--oro);outline-offset:3px;border-radius:6px}
+.serif{font-family:Cormorant,"Cormorant Garamond",Georgia,serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+/* Cabecera */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--mar);color:var(--sobre-mar)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--mar)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mono{width:38px;height:38px;border:1px solid var(--oro-claro);border-radius:50%;display:grid;place-items:center;font:500 18px/1 Cormorant,Georgia,serif;color:var(--oro-claro);letter-spacing:.02em}
+.marca b{font:500 21px/1 Cormorant,Georgia,serif;letter-spacing:.01em}
+.marca small{display:block;font-size:12px;color:var(--sobre-mar-2);margin-top:3px}
+.nav nav{display:flex;gap:26px;font-size:15px}
+.nav nav a{text-decoration:none;color:var(--sobre-mar-2)}
+.nav nav a:hover{color:var(--sobre-mar)}
+.btn-tel{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:var(--oro-claro);color:#10232D;text-decoration:none;font-weight:600;font-size:15px}
+@media (max-width:820px){.nav nav{display:none}}
+
+/* Portada */
+.portada{background:var(--mar);color:var(--sobre-mar);padding:56px 0 72px;position:relative;overflow:hidden}
+.portada::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:48px;background:var(--perla);clip-path:ellipse(70% 100% at 50% 100%)}
+.portada-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
+h1{font:400 clamp(56px,9vw,112px)/.92 Cormorant,Georgia,serif;margin:0 0 22px;letter-spacing:-.015em}
+h1 span{display:block;opacity:0;transform:translateY(18px);animation:sube .9s cubic-bezier(.2,.7,.2,1) forwards}
+h1 span:nth-child(2){animation-delay:.18s;font-style:italic;color:var(--oro-claro)}
+@keyframes sube{to{opacity:1;transform:none}}
+.intro{font-size:18px;max-width:30em;color:var(--sobre-mar-2);margin:0 0 28px}
+.intro strong{color:var(--sobre-mar);font-weight:500}
+.reseña{display:flex;align-items:center;gap:14px;font-size:15px;color:var(--sobre-mar-2)}
+.estrellas{color:var(--oro-claro);letter-spacing:2px;font-size:16px}
+.reseña b{color:var(--sobre-mar);font:500 26px/1 Cormorant,Georgia,serif}
+
+/* Odontograma */
+.mapa{background:var(--mar-2);border:1px solid rgba(227,192,138,.22);border-radius:28px;padding:22px 20px 20px}
+.mapa h2{font:500 26px/1.1 Cormorant,Georgia,serif;margin:0 0 4px;color:var(--sobre-mar)}
+.mapa p.ayuda{margin:0 0 6px;font-size:14.5px;color:var(--sobre-mar-2)}
+.boca{display:block;width:100%;max-width:380px;margin:0 auto;touch-action:manipulation}
+.diente{fill:#F4F6F3;stroke:rgba(16,35,45,.35);stroke-width:1;cursor:pointer;transition:fill .2s,transform .2s;transform-box:fill-box;transform-origin:center}
+.diente.juicio{fill:#D7DEDA}
+.diente:hover{fill:#FFF6E6}
+.diente.activo{fill:var(--oro-claro);stroke:var(--oro);stroke-width:2;transform:scale(1.14)}
+.diente:focus{outline:none}
+.diente:focus-visible{stroke:var(--oro-claro);stroke-width:3}
+.boca text{fill:var(--sobre-mar-2);font:500 11px Figtree,sans-serif}
+.boca .centro{fill:var(--sobre-mar);font:italic 500 19px Cormorant,Georgia,serif}
+.pulso{fill:none;stroke:var(--oro-claro);stroke-width:1.5;opacity:.0;animation:pulso 2.4s ease-out 1.2s 3}
+@keyframes pulso{0%{opacity:.8;r:6}100%{opacity:0;r:26}}
+.paso2{display:none;margin-top:8px}
+.paso2.abierto{display:block;animation:aparece .35s ease}
+@keyframes aparece{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.pieza-nombre{font:500 21px/1.2 Cormorant,Georgia,serif;color:var(--oro-claro);margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid rgba(234,240,238,.3);background:transparent;color:var(--sobre-mar);padding:8px 13px;border-radius:999px;font-size:14.5px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--sobre-mar);color:#10232D;border-color:var(--sobre-mar)}
+.resultado{display:none;margin-top:16px;border-top:1px solid rgba(234,240,238,.18);padding-top:16px}
+.resultado.abierto{display:block;animation:aparece .35s ease}
+.urgencia{display:inline-block;font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px;margin-bottom:8px}
+.u-hoy{background:#F2C2B4;color:#5A1E10}
+.u-semana{background:var(--oro-claro);color:#3D2A0E}
+.u-revision{background:#C8DBD3;color:#163A30}
+.resultado h3{font:500 22px/1.2 Cormorant,Georgia,serif;margin:0 0 6px;color:var(--sobre-mar)}
+.resultado p{margin:0 0 10px;font-size:15px;color:var(--sobre-mar-2)}
+.decir{background:rgba(0,0,0,.18);border-radius:14px;padding:12px 14px;font-size:14.5px;color:var(--sobre-mar);margin:12px 0}
+.decir small{display:block;color:var(--sobre-mar-2);font-size:12.5px;margin-bottom:3px}
+.acciones{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer}
+.btn-oro{background:var(--oro-claro);color:#10232D}
+.btn-linea{background:transparent;border:1px solid rgba(234,240,238,.35);color:var(--sobre-mar)}
+.aviso{font-size:12.5px;color:var(--sobre-mar-2);margin:12px 0 0}
+@media (max-width:900px){.portada-grid{grid-template-columns:1fr;gap:34px}.portada{padding-top:40px}}
+
+/* Secciones */
+section.bloque{padding:84px 0}
+.titulo{font:400 clamp(38px,5.4vw,58px)/1.02 Cormorant,Georgia,serif;margin:0 0 16px;letter-spacing:-.01em;max-width:16em}
+.entradilla{color:var(--tinta-2);max-width:36em;margin:0 0 42px;font-size:18px}
+
+.principios{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linea)}
+.principio{padding:28px 28px 8px 0}
+.principio + .principio{padding-left:28px;border-left:1px solid var(--linea)}
+.principio h3{font:500 30px/1.1 Cormorant,Georgia,serif;margin:0 0 10px}
+.principio p{margin:0;color:var(--tinta-2)}
+@media (max-width:780px){.principios{grid-template-columns:1fr}.principio,.principio + .principio{padding:24px 0;border-left:0;border-bottom:1px solid var(--linea)}}
+
+/* Primera visita */
+.visita{background:var(--superficie);border-radius:32px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:.9fr 1.1fr;gap:44px}
+.pasos{list-style:none;margin:0;padding:0;counter-reset:p}
+.pasos li{counter-increment:p;display:grid;grid-template-columns:52px 1fr;gap:6px 14px;padding:0 0 26px;position:relative}
+.pasos li::before{content:counter(p);grid-row:span 2;width:44px;height:44px;border-radius:50%;border:1px solid var(--oro);color:var(--oro);display:grid;place-items:center;font:500 22px/1 Cormorant,Georgia,serif}
+.pasos li:not(:last-child)::after{content:"";position:absolute;left:22px;top:48px;bottom:4px;width:1px;background:var(--linea)}
+.pasos h3{margin:8px 0 0;font-size:17.5px;font-weight:600}
+.pasos p{margin:0;color:var(--tinta-2);font-size:16px}
+@media (max-width:860px){.visita{grid-template-columns:1fr;gap:20px}}
+
+/* Tratamientos */
+.lista-trat{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.trat{border-top:1px solid var(--linea)}
+.trat button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:none;border:0;padding:20px 0;cursor:pointer;text-align:left;font:500 25px/1.15 Cormorant,Georgia,serif}
+.trat .mas{width:28px;height:28px;flex:0 0 28px;border-radius:50%;border:1px solid var(--linea);position:relative}
+.trat .mas::before,.trat .mas::after{content:"";position:absolute;left:8px;right:8px;top:13px;height:1px;background:currentColor;transition:transform .25s}
+.trat .mas::after{transform:rotate(90deg)}
+.trat button[aria-expanded="true"] .mas::after{transform:rotate(0)}
+.trat .cuerpo{display:none;padding:0 0 22px;color:var(--tinta-2);font-size:16px;max-width:32em}
+.trat .cuerpo.abierto{display:block}
+@media (max-width:760px){.lista-trat{grid-template-columns:1fr}}
+
+/* Horario */
+.horario-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+.tarjeta{background:var(--superficie);border-radius:28px;padding:30px}
+.estado{display:flex;align-items:center;gap:12px;font-size:17px;font-weight:600;margin-bottom:18px}
+.punto{width:12px;height:12px;border-radius:50%;background:#C46A54;box-shadow:0 0 0 5px rgba(196,106,84,.18)}
+.punto.abierto{background:#3E8E6E;box-shadow:0 0 0 5px rgba(62,142,110,.2)}
+.semana{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.dia{border:1px solid var(--linea);border-radius:16px;padding:12px 6px 14px;text-align:center}
+.dia b{display:block;font:500 22px/1 Cormorant,Georgia,serif;margin-bottom:8px}
+.dia span{display:block;font-size:13px;color:var(--tinta-2);line-height:1.35}
+.dia.tarde{border-color:var(--oro)}
+.dia.hoy{background:var(--mar);color:var(--sobre-mar);border-color:var(--mar)}
+.dia.hoy span{color:var(--sobre-mar-2)}
+.nota-tarde{margin:16px 0 0;font-size:15px;color:var(--tinta-2)}
+.nota-tarde strong{color:var(--tinta);font-weight:600}
+.recordar h3{font:500 28px/1.1 Cormorant,Georgia,serif;margin:0 0 6px}
+.recordar p{color:var(--tinta-2);margin:0 0 16px;font-size:15.5px}
+.opciones{display:grid;gap:8px}
+.opcion{border:1px solid var(--linea);background:transparent;border-radius:14px;padding:12px 14px;text-align:left;cursor:pointer;font-size:15.5px}
+.opcion[aria-pressed="true"]{border-color:var(--oro);background:rgba(185,138,72,.1)}
+.consejo{display:none;margin-top:16px;font-size:15.5px}
+.consejo.abierto{display:block;animation:aparece .3s ease}
+.consejo p{color:var(--tinta);margin:0 0 12px}
+.btn-mar{background:var(--mar);color:var(--sobre-mar)}
+@media (max-width:860px){.horario-grid{grid-template-columns:1fr}}
+@media (max-width:420px){.semana{gap:5px}.dia{padding:10px 2px 12px}.dia span{font-size:12px}}
+
+/* Contacto */
+.contacto{background:var(--mar);color:var(--sobre-mar);border-radius:32px;padding:clamp(30px,6vw,64px);display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:end}
+.contacto .titulo{color:var(--sobre-mar)}
+.contacto p{color:var(--sobre-mar-2);margin:0 0 6px}
+.contacto .tel{font:400 clamp(40px,6vw,62px)/1 Cormorant,Georgia,serif;color:var(--oro-claro);text-decoration:none;display:inline-block;margin:6px 0 18px}
+@media (max-width:820px){.contacto{grid-template-columns:1fr}}
+footer{padding:36px 0 110px;color:var(--tinta-2);font-size:14px}
+@media (min-width:821px){footer{padding-bottom:40px}}
+
+/* Barra móvil */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--mar);border-top:1px solid rgba(227,192,138,.2)}
+.barra a{flex:1}
+@media (max-width:820px){.barra{display:flex}}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  h1 span{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="marca" href="#inicio" aria-label="Dentista Pilar Godoy, inicio">
+      <span class="mono" aria-hidden="true">PG</span>
+      <span><b>Pilar Godoy</b><small>Clínica dental · Almería</small></span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#forma">Cómo trabajamos</a>
+      <a href="#visita">Primera visita</a>
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#horario">Horario</a>
+    </nav>
+    <a class="btn-tel" href="tel:+34950242136">Llamar</a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="portada">
+  <div class="wrap portada-grid">
+    <div>
+      <h1><span>Sin</span><span>sorpresas.</span></h1>
+      <p class="intro">En la consulta de <strong>Pilar Godoy</strong> te explicamos qué tienes, qué opciones hay y cuánto cuesta, <strong>antes de empezar</strong>. Odontología de confianza en la Avenida Cabo de Gata.</p>
+      <div class="reseña">
+        <b>5,0</b>
+        <span><span class="estrellas" aria-hidden="true">★★★★★</span><br>Valoración de sus pacientes en Google</span>
+      </div>
+    </div>
+
+    <div class="mapa" id="mapa">
+      <h2>¿Qué diente te molesta?</h2>
+      <p class="ayuda">Tócalo en el dibujo. Te decimos qué puede ser y con qué prisa conviene venir.</p>
+      <svg class="boca" id="boca" viewBox="0 0 360 340" role="group" aria-label="Dibujo de la boca: elige un diente"></svg>
+
+      <div class="paso2" id="paso2">
+        <p class="pieza-nombre" id="piezaNombre"></p>
+        <div class="chips" id="chips" role="group" aria-label="¿Qué notas?"></div>
+      </div>
+
+      <div class="resultado" id="resultado" aria-live="polite">
+        <span class="urgencia" id="urgencia"></span>
+        <h3 id="resTitulo"></h3>
+        <p id="resTexto"></p>
+        <p id="resMientras"></p>
+        <div class="decir"><small>Al llamar, puedes decir:</small><span id="frase"></span></div>
+        <div class="acciones">
+          <a class="btn btn-oro" href="tel:+34950242136">Llamar al 950 24 21 36</a>
+          <button class="btn btn-linea" id="copiar" type="button">Copiar el mensaje</button>
+        </div>
+        <p class="aviso">Es una orientación, no un diagnóstico. Si hay fiebre, la cara se hincha o el dolor no te deja dormir, llama hoy mismo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="forma">
+  <div class="wrap">
+    <h2 class="titulo">Una consulta cercana, donde hablas directamente con tu dentista.</h2>
+    <p class="entradilla">Sus pacientes vuelven por lo mismo: les dicen la verdad, les tratan con cariño y salen sabiendo lo que se les ha hecho.</p>
+    <div class="principios">
+      <div class="principio"><h3>Transparencia</h3><p>Ves tu diagnóstico, entiendes las opciones y tienes el presupuesto por escrito antes de decidir nada.</p></div>
+      <div class="principio"><h3>Trato directo</h3><p>Hablas con Pilar y su equipo, no con un comercial. Las dudas se resuelven en la propia consulta.</p></div>
+      <div class="principio"><h3>Implicación</h3><p>Solo se hace lo que necesitas. Si algo puede esperar o no hace falta, te lo decimos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="visita" style="padding-top:0">
+  <div class="wrap">
+    <div class="visita">
+      <div>
+        <h2 class="titulo">Tu primera visita, paso a paso.</h2>
+        <p class="entradilla" style="margin-bottom:0">Si hace tiempo que no vas al dentista, o te da apuro, esto es exactamente lo que va a pasar.</p>
+      </div>
+      <ol class="pasos">
+        <li><h3>Nos cuentas qué te pasa</h3><p>Sin prisas. También tus miedos, si los tienes.</p></li>
+        <li><h3>Revisamos tu boca</h3><p>Con radiografía si hace falta, y te enseñamos lo que vemos.</p></li>
+        <li><h3>Te explicamos las opciones</h3><p>Qué es urgente, qué puede esperar y qué alternativas hay.</p></li>
+        <li><h3>Presupuesto claro</h3><p>Por escrito y sin compromiso. Te lo llevas a casa y decides tú.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="tratamientos" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="titulo">Tratamientos</h2>
+    <p class="entradilla">Odontología general para toda la familia. Toca cada uno para saber en qué consiste.</p>
+    <div class="lista-trat" id="listaTrat"></div>
+  </div>
+</section>
+
+<section class="bloque" id="horario" style="padding-top:0">
+  <div class="wrap horario-grid">
+    <div class="tarjeta">
+      <div class="estado" aria-live="polite"><span class="punto" id="punto"></span><span id="estadoTxt">Consultando horario…</span></div>
+      <div class="semana" id="semana"></div>
+      <p class="nota-tarde">¿Trabajas por la mañana? <strong>Martes y jueves abrimos hasta las 20:00.</strong></p>
+    </div>
+    <div class="tarjeta recordar">
+      <h3>¿Cuándo fue tu última revisión?</h3>
+      <p>Te decimos cuándo te toca y te lo apuntamos en el calendario del móvil.</p>
+      <div class="opciones" id="opciones">
+        <button class="opcion" type="button" data-m="3" aria-pressed="false">Hace menos de 6 meses</button>
+        <button class="opcion" type="button" data-m="0" aria-pressed="false">Entre 6 meses y 1 año</button>
+        <button class="opcion" type="button" data-m="-1" aria-pressed="false">Hace más de un año</button>
+        <button class="opcion" type="button" data-m="-2" aria-pressed="false">No me acuerdo</button>
+      </div>
+      <div class="consejo" id="consejo" aria-live="polite">
+        <p id="consejoTxt"></p>
+        <a class="btn btn-mar" id="calLink" target="_blank" rel="noopener">Añadir recordatorio al calendario</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" style="padding-top:0">
+  <div class="wrap">
+    <div class="contacto">
+      <div>
+        <h2 class="titulo">Te esperamos en la Avenida Cabo de Gata.</h2>
+        <p>Av. de Cabo de Gata, 122, 1ºC · 04007 Almería</p>
+        <a class="tel" href="tel:+34950242136">950 24 21 36</a>
+      </div>
+      <div class="acciones">
+        <a class="btn btn-oro" href="tel:+34950242136">Pedir cita</a>
+        <a class="btn btn-linea" href="https://maps.app.goo.gl/zUMyFDzGuASXQTjB6" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="anio"></span> Dentista Pilar Godoy · Av. de Cabo de Gata, 122, 1ºC, Almería · 950 24 21 36</div>
+</footer>
+
+<div class="barra">
+  <a class="btn btn-oro" href="tel:+34950242136">Llamar</a>
+  <a class="btn btn-linea" href="#mapa">¿Qué te duele?</a>
+</div>
+
+<script>
+(function(){
+  var TEL='950 24 21 36';
+  var NS='http://www.w3.org/2000/svg';
+  var boca=document.getElementById('boca');
+  var nombres={1:'incisivo central',2:'incisivo lateral',3:'colmillo',4:'primer premolar',5:'segundo premolar',6:'primera muela',7:'segunda muela',8:'muela del juicio'};
+  var ancho={1:21,2:18,3:19,4:21,5:21,6:28,7:26,8:23};
+  var alto={1:30,2:27,3:30,4:25,5:25,6:28,7:27,8:24};
+  var cx=180, rx=146, ry=126, gap=2.6;
+
+  function nombrePieza(n){
+    var q=Math.floor(n/10), d=n%10;
+    var arriba=(q===1||q===2), dcha=(q===1||q===4);
+    return nombres[d][0].toUpperCase()+nombres[d].slice(1)+(arriba?' de arriba':' de abajo')+(dcha?', lado derecho':', lado izquierdo');
+  }
+
+  function arcada(orden, arriba){
+    var total=orden.reduce(function(s,n){return s+ancho[n%10]+gap},0);
+    var acum=0, cy=arriba?166:178;
+    orden.forEach(function(n){
+      var w=ancho[n%10], h=alto[n%10];
+      var t=(acum+(w+gap)/2)/total; acum+=w+gap;
+      var a=Math.PI*(1-t);
+      var x=cx+rx*Math.cos(a);
+      var y=arriba? cy-ry*Math.sin(a) : cy+ry*Math.sin(a);
+      var rot=arriba? (90-a*180/Math.PI) : (a*180/Math.PI-90);
+      var g=document.createElementNS(NS,'g');
+      g.setAttribute('transform','translate('+x.toFixed(1)+' '+y.toFixed(1)+') rotate('+rot.toFixed(1)+')');
+      var r=document.createElementNS(NS,'rect');
+      r.setAttribute('x',-w/2);r.setAttribute('y',-h/2);r.setAttribute('width',w);r.setAttribute('height',h);
+      r.setAttribute('rx',Math.min(w,h)*.42);
+      r.setAttribute('class','diente'+(n%10===8?' juicio':''));
+      r.setAttribute('tabindex','0');r.setAttribute('role','button');
+      r.setAttribute('aria-label',nombrePieza(n)+' (pieza '+n+')');
+      r.dataset.n=n;
+      g.appendChild(r);boca.appendChild(g);
+    });
+  }
+  arcada([18,17,16,15,14,13,12,11,21,22,23,24,25,26,27,28],true);
+  arcada([48,47,46,45,44,43,42,41,31,32,33,34,35,36,37,38],false);
+
+  function texto(x,y,t,cls,anchor){var e=document.createElementNS(NS,'text');e.setAttribute('x',x);e.setAttribute('y',y);e.setAttribute('text-anchor',anchor||'middle');if(cls)e.setAttribute('class',cls);e.textContent=t;boca.appendChild(e);}
+  texto(180,166,'Arriba','centro');texto(180,192,'Abajo','centro');
+  texto(4,334,'Tu derecha','','start');texto(356,334,'Tu izquierda','','end');
+  var pulso=document.createElementNS(NS,'circle');pulso.setAttribute('cx',180);pulso.setAttribute('cy',40);pulso.setAttribute('r',6);pulso.setAttribute('class','pulso');boca.appendChild(pulso);
+
+  var sintomas=[
+    {id:'dolor',t:'Dolor fuerte o que late',u:'hoy',h:'Puede ser un nervio inflamado o una infección',p:'Cuando el dolor late, aparece solo o te despierta por la noche, suele indicar que el nervio del diente está afectado. Cuanto antes se trata, más fácil es salvar el diente.',m:'Mientras tanto: analgésico habitual si lo tomas sin problema, y evita el calor directo en la cara.'},
+    {id:'frio',t:'Me da calambre con el frío o el dulce',u:'semana',h:'Puede ser sensibilidad o una caries',p:'Un pinchazo breve con el frío suele deberse a encía retraída, desgaste del esmalte o una caries que empieza. Se revisa en una visita corta.',m:'Mientras tanto: pasta para dientes sensibles y cepillo suave.'},
+    {id:'morder',t:'Me duele al morder',u:'semana',h:'Puede ser una fisura, un empaste alto o el nervio',p:'El dolor al masticar en un punto concreto suele venir de un diente fisurado, de un empaste que ha quedado alto o de una inflamación en la raíz.',m:'Mientras tanto: mastica por el otro lado y evita cosas duras.'},
+    {id:'roto',t:'Se me ha roto un trozo',u:'semana',h:'Conviene reconstruirlo antes de que vaya a más',p:'Un diente partido se puede reconstruir casi siempre. Si esperas, el borde se va desgastando o se rompe más, y el arreglo es mayor.',m:'Mientras tanto: si corta la lengua, cúbrelo con cera dental o chicle sin azúcar. Si te duele mucho o ves la parte rosa del diente, llama hoy.'},
+    {id:'encia',t:'Me sangra o se hincha la encía',u:'semana',h:'Puede ser inflamación de las encías',p:'Que la encía sangre al cepillarte es la señal más frecuente de gingivitis. Con una limpieza a tiempo se corrige; si se deja, puede afectar al hueso.',m:'Mientras tanto: no dejes de cepillarte esa zona, con suavidad. Si hay bulto con pus o fiebre, llama hoy.'},
+    {id:'mancha',t:'Tiene una mancha o un agujero',u:'revision',h:'Merece una revisión, sin urgencia',p:'Una mancha oscura o un pequeño agujero puede ser una caries que todavía no duele. Es el mejor momento para tratarla: el arreglo es pequeño.',m:'Pide cita para una revisión cuando te venga bien.'},
+    {id:'falta',t:'Me falta este diente',u:'revision',h:'Hay varias formas de reponerlo',p:'Un hueco hace que los dientes de al lado se muevan con el tiempo. En la visita valoramos las opciones (implante, puente o prótesis) y te damos el presupuesto de cada una.',m:'Pide cita de valoración cuando te venga bien.'}
+  ];
+  var etiquetas={hoy:['u-hoy','Llama hoy'],semana:['u-semana','Esta semana'],revision:['u-revision','Sin prisa']};
+  var pieza=null, chipsEl=document.getElementById('chips');
+
+  sintomas.forEach(function(s){
+    var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=s.t;b.setAttribute('aria-pressed','false');
+    b.addEventListener('click',function(){
+      chipsEl.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');mostrar(s);
+    });
+    chipsEl.appendChild(b);
+  });
+
+  function elegir(r){
+    boca.querySelectorAll('.diente').forEach(function(d){d.classList.remove('activo')});
+    r.classList.add('activo');pieza=+r.dataset.n;
+    pulso.remove&&pulso.remove();
+        document.getElementById('piezaNombre').textContent=nombrePieza(pieza)+'. ¿Qué notas?';
+    document.getElementById('paso2').classList.add('abierto');
+    chipsEl.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed','false')});
+    document.getElementById('resultado').classList.remove('abierto');
+  }
+  boca.addEventListener('click',function(e){if(e.target.classList.contains('diente'))elegir(e.target)});
+  boca.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.classList.contains('diente')){e.preventDefault();elegir(e.target)}});
+
+  function mostrar(s){
+    var u=etiquetas[s.u], el=document.getElementById('urgencia');
+    el.className='urgencia '+u[0];el.textContent=u[1];
+    document.getElementById('resTitulo').textContent=s.h;
+    var extra=(pieza%10===8 && s.id!=='falta')?' En las muelas del juicio, además, es frecuente que la encía de alrededor se inflame al salir.':'';
+    document.getElementById('resTexto').textContent=s.p+extra;
+    document.getElementById('resMientras').textContent=s.m;
+    var np=nombrePieza(pieza).toLowerCase(), art=/^(incisivo|colmillo|primer |segundo )/.test(np)?'el ':'la ';
+    var frase=s.id==='falta'?'Hola, quería pedir cita de valoración. Me falta '+art+np+' (pieza '+pieza+').':'Hola, quería pedir cita. Me molesta '+art+np+' (pieza '+pieza+'): '+s.t.toLowerCase()+'.';
+    document.getElementById('frase').textContent=frase;
+    var r=document.getElementById('resultado');r.classList.add('abierto');
+    if(window.innerWidth<900) r.scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
+  document.getElementById('copiar').addEventListener('click',function(){
+    var b=this,t=document.getElementById('frase').textContent;
+    function ok(){b.textContent='Mensaje copiado';setTimeout(function(){b.textContent='Copiar el mensaje'},2200)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,ok)}else{ok()}
+  });
+
+  /* Tratamientos */
+  var trats=[
+    ['Revisión y limpieza','Repasamos dientes y encías, quitamos el sarro y te decimos si hay algo que vigilar. Lo ideal es venir una vez al año, o cada seis meses si tus encías lo necesitan.'],
+    ['Empastes','Limpiamos la caries y rellenamos el diente con material del color de tu diente. Suele hacerse en una sola visita y con anestesia, así que no duele.'],
+    ['Endodoncia','Cuando el nervio está dañado, lo limpiamos por dentro y sellamos el diente. Así se conserva tu propio diente en vez de sacarlo.'],
+    ['Coronas y prótesis','Para dientes muy deteriorados o para reponer los que faltan, con prótesis fijas o removibles. Te enseñamos cada opción con su precio.'],
+    ['Implantes','Una raíz de titanio que sustituye al diente perdido y sobre la que va una corona fija. Valoramos antes si es la mejor opción para ti.'],
+    ['Extracciones','Incluidas las muelas del juicio. Solo cuando de verdad hace falta, y te explicamos cómo cuidarte después.'],
+    ['Odontología para niños','Primeras visitas tranquilas, selladores y revisiones para que crezcan sin miedo al dentista.'],
+    ['Blanqueamiento','Aclara varios tonos el color de tus dientes de forma controlada. Primero comprobamos que no haya caries ni sensibilidad.']
+  ];
+  var lista=document.getElementById('listaTrat');
+  trats.forEach(function(t,i){
+    var d=document.createElement('div');d.className='trat';
+    d.innerHTML='<button type="button" aria-expanded="false" aria-controls="tr'+i+'"><span></span><span class="mas" aria-hidden="true"></span></button><div class="cuerpo" id="tr'+i+'"></div>';
+    d.querySelector('button span').textContent=t[0];d.querySelector('.cuerpo').textContent=t[1];
+    d.querySelector('button').addEventListener('click',function(){
+      var abierto=this.getAttribute('aria-expanded')==='true';
+      this.setAttribute('aria-expanded',String(!abierto));d.querySelector('.cuerpo').classList.toggle('abierto',!abierto);
+    });
+    lista.appendChild(d);
+  });
+
+  /* Horario en vivo (hora de Almería) */
+  var horas={1:[8,15],2:[8,20],3:[8,15],4:[8,20],5:[8,15]};
+  var dias=[['L',1],['M',2],['X',3],['J',4],['V',5]];
+  function ahoraMadrid(){
+    try{
+      var p=new Intl.DateTimeFormat('es-ES',{timeZone:'Europe/Madrid',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+      var m={};p.forEach(function(x){m[x.type]=x.value});
+      var wd={'lun':1,'mar':2,'mié':3,'jue':4,'vie':5,'sáb':6,'dom':0}[m.weekday.replace('.','').toLowerCase()];
+      return {d:wd,h:+m.hour%24,min:+m.minute};
+    }catch(e){var n=new Date();return {d:n.getDay(),h:n.getHours(),min:n.getMinutes()}}
+  }
+  var sem=document.getElementById('semana'), a=ahoraMadrid();
+  dias.forEach(function(x){
+    var h=horas[x[1]],e=document.createElement('div');
+    e.className='dia'+(h[1]===20?' tarde':'')+(a.d===x[1]?' hoy':'');
+    e.innerHTML='<b>'+x[0]+'</b><span>8:00<br>a '+h[1]+':00</span>';
+    sem.appendChild(e);
+  });
+  function estado(){
+    var a=ahoraMadrid(),h=horas[a.d],t=a.h+a.min/60,txt,abierto=false;
+    var nombresDia=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+    if(h&&t>=h[0]&&t<h[1]){abierto=true;txt='Abierto ahora · cierra a las '+h[1]+':00';}
+    else{
+      var dd=a.d,sum=0;
+      if(h&&t<h[0]){txt='Cerrado · abre hoy a las 8:00';}
+      else{do{dd=(dd+1)%7;sum++}while(!horas[dd]);txt='Cerrado · abre '+(sum===1?'mañana':'el '+nombresDia[dd])+' a las 8:00';}
+    }
+    document.getElementById('punto').classList.toggle('abierto',abierto);
+    document.getElementById('estadoTxt').textContent=txt;
+  }
+  estado();setInterval(estado,60000);
+
+  /* Recordatorio de revisión */
+  function fmt(d){return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0')}
+  function laborable(d){while(d.getDay()===0||d.getDay()===6)d.setDate(d.getDate()+1);return d}
+  document.querySelectorAll('.opcion').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.opcion').forEach(function(o){o.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      var m=+b.dataset.m,f=new Date(),txt;
+      var meses=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+      if(m>0){f.setMonth(f.getMonth()+m);laborable(f);txt='Vas bien. Tu próxima revisión sería hacia '+meses[f.getMonth()]+' de '+f.getFullYear()+'. Te dejamos el aviso puesto.';}
+      else if(m===0){f.setDate(f.getDate()+14);laborable(f);txt='Te toca ya o te tocará muy pronto. Te proponemos llamar en las próximas dos semanas.';}
+      else{f.setDate(f.getDate()+2);laborable(f);txt='Conviene venir cuanto antes: muchos problemas no duelen hasta que están avanzados. Llama esta semana y lo vemos.';}
+      var fin=new Date(f);fin.setDate(fin.getDate()+1);
+      var url='https://calendar.google.com/calendar/render?action=TEMPLATE'+
+        '&text='+encodeURIComponent('Pedir cita de revisión con Pilar Godoy')+
+        '&dates='+fmt(f)+'/'+fmt(fin)+
+        '&details='+encodeURIComponent('Llamar al '+TEL+' para pedir cita de revisión. L, X y V de 8:00 a 15:00; M y J de 8:00 a 20:00.')+
+        '&location='+encodeURIComponent('Av. de Cabo de Gata, 122, 1ºC, 04007 Almería');
+      document.getElementById('consejoTxt').textContent=txt;
+      document.getElementById('calLink').href=url;
+      document.getElementById('consejo').classList.add('abierto');
+    });
+  });
+  document.getElementById('anio').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
